@@ -23,18 +23,18 @@ public class PracticeProblems { // no voids, cant return those
         }
     }
 
-    static void sumGrid(int[][] grid) {
-        int sum = 0;
-        for (int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[i].length; j++) {
-                sum += grid[i][j];
+    static int sumGrid(int[][] grid) {
+        int sum = 0; // start at 0, as always
+        for (int i = 0; i < grid.length; i++) { // continue until end of grid
+            for (int j = 0; j < grid[i].length; j++) { // continue until end of row
+                sum += grid[i][j]; // add current value to sum
             }
         }
         return sum;
     }
 
     static int fib(int n) { // i've done this in python before! Java is sucking the life out of me...
-        if (n <= 0) {
+        if (n <= 0) { // TEMP FIB, NEED TO BE ABLE TO INPUNT NTH AMOUNT
             return 0;
         } else if (n == 1) {
             return 1;
