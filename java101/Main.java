@@ -1,11 +1,9 @@
 package java101;
 
 public class Main {
-    
-    static double f(double x) {
-        return 2 * x;
-    }
-    public static void main(String[] args) {
-     System.out.println("f(3): " + f(x));
-}
+ public static void main(String[] args) {
+  int[] arr = {4, 3, 2, 8, 3, 3, 1, 3};
+  System.out.println("Count occurences function: " + PracticeProblems.countOccurrences(arr, 3));
+ }
+ 
 }

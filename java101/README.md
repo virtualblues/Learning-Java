@@ -1,19 +1,24 @@
 [linked guide](https://sciborgs.github.io/SciGuides/projects/intro-to-programming/Java101/)
 
 test:
+convert arrays into readable output
+package java101;
 
 public class Main {
- public static void main(String[] args) {
-  int[] arr = new int[100];
-  int index = 0;
-  while (index < 100) {
-   if (index % 2 == 0) {
-    arr[index] = 2;
-   } else {
-    arr[index] = 1;
+ static void printIntArray(int[] arr) {
+  String str = "(";
+  for (int i = 0; i < arr.length; i++) {
+   str += arr[i];
+   if (i != arr.length - 1) {
+    str += ", ";
    }
-   index = index + 1;
-   System.out.println(arr[index - 1]);
   }
+  str += ")";
+  System.out.println(str);
+ }
+ 
+ public static void main(String[] args) {
+  int[] arr = {1, 2, 3};
+  printIntArray(arr);
  }
 }
